@@ -3,7 +3,7 @@ theme:
   name: material
 
 
-  # site_url: https://printexo.github.io
+  site_url: https://printexo.github.io
 
   palette:
     primary: black
