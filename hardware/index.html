@@ -1,0 +1,1260 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../quick_start/">
+      
+      
+        <link rel="next" href="bom/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/mintlab.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Overview - PrintExo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#build-the-robot" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PrintExo" class="md-header__button md-logo" aria-label="PrintExo" data-md-component="logo">
+      <span style="font-weight: 700; font-size: 1.1rem;">
+  PrintExo
+</span>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PrintExo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quick_start/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Build the Robot
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../elec_control/" class="md-tabs__link">
+          
+  
+  
+  Electronics & Control
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../troubleshooting/" class="md-tabs__link">
+          
+  
+  
+  Troubleshooting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../comm_res/" class="md-tabs__link">
+          
+  
+  
+  Community & Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../updates/" class="md-tabs__link">
+          
+  
+  
+  Updates
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PrintExo" class="md-nav__button md-logo" aria-label="PrintExo" data-md-component="logo">
+      <span style="font-weight: 700; font-size: 1.1rem;">
+  PrintExo
+</span>
+    </a>
+    PrintExo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build the Robot
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Build the Robot
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Design Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mechanical-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Mechanical Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Mechanical Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-actuation-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Actuation module
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-shank-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Shank structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-shoe-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Shoe interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fabrication-overview-fdm-printing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Fabrication Overview (FDM Printing)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-assembly-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Assembly Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-where-to-go-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Where to Go Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bill of Materials (BOM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="printing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3D Printing Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="assembly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assembly Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../elec_control/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics & Control
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../troubleshooting/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../comm_res/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Community & Resources
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../updates/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Updates
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Build the Robot
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="build-the-robot">Build the Robot</h1>
+<p>This section describes how to <strong>physically build PrintExo</strong> based on its mechanical design, fabrication strategy, and assembly process.</p>
+<p>The build pipeline is organized into:</p>
+<ol>
+<li>understanding the design principles,  </li>
+<li>fabricating the 3D-printed components,  </li>
+<li>sourcing hardware, and  </li>
+<li>assembling the full device.</li>
+</ol>
+<hr />
+<h2 id="1-design-principles">1. Design Principles</h2>
+<p>PrintExo is designed with a primary objective:</p>
+<blockquote>
+<p><strong>to lower the practical barriers that impede researchers and educators from entering ankle exoskeleton research.</strong></p>
+</blockquote>
+<p>To achieve this, the mechanical design follows three core requirements:</p>
+<ol>
+<li>
+<p><strong>FDM-only custom parts</strong><br />
+   All custom structural components are manufacturable using consumer-grade desktop FDM 3D printers.</p>
+</li>
+<li>
+<p><strong>Standard off-the-shelf hardware</strong><br />
+   All non-printed components are standard, easily available off-the-shelf parts.</p>
+</li>
+<li>
+<p><strong>Non-invasive shoe interface</strong><br />
+   The device must interface with commercially available footwear <strong>without permanent modification</strong>.</p>
+</li>
+</ol>
+<p>Within these constraints, the system balances:</p>
+<ul>
+<li>sufficient mechanical rigidity for effective torque transmission  </li>
+<li>a form factor appropriate for experimental use  </li>
+<li>a modular architecture that supports rapid prototyping and iterations of assistance strategies  </li>
+</ul>
+<hr />
+<h2 id="2-mechanical-architecture">2. Mechanical Architecture</h2>
+<p>PrintExo consists of three main mechanical subsystems:</p>
+<h3 id="21-actuation-module">2.1 Actuation module</h3>
+<p>The actuation module includes:</p>
+<ul>
+<li>a CubeMars AK60-6 V1.1 KV140 actuator (CubeMars, China),  </li>
+<li>an integrated motor driver,  </li>
+<li>a 3D-printed <strong>1:4 planetary gear stage</strong>, and  </li>
+<li>a protective casing.</li>
+</ul>
+<p>Key characteristics:</p>
+<ul>
+<li>The integrated driver simplifies communication and power management.  </li>
+<li>The actuator provides 9 N·m peak torque.  </li>
+<li>Prior work has used ankle-assist torques of approximately 0.20–0.70 N·m/kg (about 14–49.5 N·m for a 70-kg person), with real-world optimization reporting peak torques up to 54 N·m.  </li>
+<li>To reach a more suitable torque range, the 1:4 planetary gear stage increases the peak output torque to <strong>36 N·m</strong>.  </li>
+<li>Bearings are integrated at each planet gear to reduce frictional losses and improve mechanical efficiency.</li>
+</ul>
+<p>The motor, planetary stage, and casing form a single actuation unit that transmits torque to the shoe interface.</p>
+<hr />
+<h3 id="22-shank-structure">2.2 Shank structure</h3>
+<p>The shank structure:</p>
+<ul>
+<li>extends vertically from the actuation module,  </li>
+<li>is mounted on the <strong>lateral side</strong> of the user’s lower leg, and  </li>
+<li>is secured using a <strong>sports calf support sleeve</strong>.</li>
+</ul>
+<p>Design features:</p>
+<ul>
+<li>Although assistive torque is applied in the sagittal plane (plantarflexion/dorsiflexion), a <strong>passive hinge</strong> is included to allow frontal-plane inversion/eversion.  </li>
+<li>This hinge improves alignment with the user’s natural gait kinematics and helps mitigate off-axis loads that could otherwise cause mechanical damage.  </li>
+<li>The calf sleeve provides a long contact length to resist rotation and slippage, while distributing pressure evenly.  </li>
+<li>No custom-molded orthotics are required, which reduces fabrication complexity and remains consistent with the use of accessible components.</li>
+</ul>
+<hr />
+<h3 id="23-shoe-interface">2.3 Shoe interface</h3>
+<p>The shoe interface uses a <strong>lace-based integration strategy</strong> to form a non-invasive but secure connection to the footwear.</p>
+<p>Main elements:</p>
+<ul>
+<li>A rigid <strong>dorsal component</strong> that contours the midfoot and extends diagonally to the lateral side to connect with the planetary gear output.  </li>
+<li>During fitting, the shoe is partially unlaced, then relaced through:</li>
+<li>guides in the dorsal interface component, and  </li>
+<li>the original eyelets of the shoe.  </li>
+</ul>
+<p>This procedure effectively sandwiches the interface between the shoe tongue and the tensioned laces, creating a stable bond.</p>
+<p>Additional stabilization:</p>
+<ul>
+<li><strong>Auxiliary laces</strong> are routed through guide holes on the plantar (sole) section of the interface and tightened across the bottom of the shoe.  </li>
+<li>This helps the device remain cinched to the shoe during dynamic walking.</li>
+</ul>
+<p>Torque transmission:</p>
+<ul>
+<li>During plantarflexion assistance, the rigid dorsal structure pushes against the foot, converting actuator rotation into assistive force.  </li>
+<li>During swing or dorsiflexion, the lace tension maintains contact and returns the interface toward a neutral position without restricting natural ankle range of motion.</li>
+</ul>
+<p>Scalability:</p>
+<ul>
+<li>The shoe interface is <strong>parametrically designed</strong>, enabling researchers to print discrete sizes that correspond to standard footwear dimensions.  </li>
+<li>Combined with lace-based attachment, this allows deployment across a wide variety of commercially available lace-up shoes and participant cohorts.</li>
+</ul>
+<hr />
+<h2 id="3-fabrication-overview-fdm-printing">3. Fabrication Overview (FDM Printing)</h2>
+<p>All custom structural components of PrintExo are fabricated using <strong>PLA filament</strong>.</p>
+<p>Rationale:</p>
+<ul>
+<li>PLA was chosen for its high availability and ease of printing, consistent with the goal of minimizing entry barriers.  </li>
+<li>The design remains compatible with higher-performance materials such as <strong>PETG</strong> or <strong>carbon-fiber–reinforced filaments</strong>.</li>
+</ul>
+<p>Printing setup:</p>
+<ul>
+<li>Printer: Bambu Lab X1C (Bambu Lab, China)  </li>
+<li>Nozzle: 0.4 mm  </li>
+<li>Layer height: 0.20 mm  </li>
+<li>Infill pattern: 70% <strong>gyroid</strong></li>
+</ul>
+<p>Structural considerations:</p>
+<ul>
+<li>Due to the anisotropic strength of FDM printing, load-bearing components are oriented to avoid inter-layer shear as the dominant failure mode.</li>
+</ul>
+<p>Open resources:</p>
+<ul>
+<li>Editable CAD files (<code>.f3d</code>)  </li>
+<li>Mesh files (<code>.stl</code>)  </li>
+<li>Print-ready files (<code>.gcode</code>)  </li>
+</ul>
+<p>These are provided in an open-access repository to support transparency and reproducibility.</p>
+<hr />
+<h2 id="4-assembly-overview">4. Assembly Overview</h2>
+<p>Hardware and fastening:</p>
+<ul>
+<li>PrintExo uses standardized commercial hardware for all load-bearing interfaces.  </li>
+<li>All fasteners are <strong>unified to M3 bolts</strong>, and a single roller bearing size is used throughout.  </li>
+<li>Components are joined via <strong>screw-fastening</strong>.</li>
+</ul>
+<p>Assembly workflow:</p>
+<ol>
+<li>Print all required PLA components.  </li>
+<li>Perform basic post-processing:</li>
+<li>remove supports,  </li>
+<li>perform light sanding if necessary.  </li>
+<li>Tap or drill pre-modeled holes to ensure precise fastener alignment.  </li>
+<li>Install bearings and fit the planetary gear assembly.  </li>
+<li>Assemble the shank structure and hinge.  </li>
+<li>Attach the shoe interface and verify alignment with the actuator output.  </li>
+<li>Mount the device on the calf sleeve and shoe for fitting.</li>
+</ol>
+<p>Tools:</p>
+<ul>
+<li>Common hand tools (e.g., screwdrivers, hex keys).  </li>
+<li>A power drill can be used to speed up certain steps, such as drilling and tapping.</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>A comprehensive <strong>open-source assembly manual</strong> is provided.  </li>
+<li>Additional guidance is included for modifying CAD or hardware choices to match locally available non-printable parts.</li>
+</ul>
+<hr />
+<h2 id="5-where-to-go-next">5. Where to Go Next</h2>
+<p>To actually build PrintExo, continue with:</p>
+<ul>
+<li><a href="bom/">Bill of Materials (BOM)</a>  </li>
+<li><a href="printing/">3D Printing Guide</a>  </li>
+<li><a href="assembly/">Assembly Guide</a>  </li>
+</ul>
+<p>These pages provide the specific part lists, printer settings, and step-by-step assembly procedures derived from the system design summarized above.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <div class="md-footer-meta__item">
+
+        
+          <div>
+            Copyright &copy; Korea University Movement Intelligence Laboratory(MINT Lab), All Rights Reserved.
+          </div>
+        
+
+        
+          <div>
+            Made with <a href="https://squidfunk.github.io/mkdocs-material/">
+              Material for MkDocs
+            </a>
+          </div>
+        
+
+        <div>
+          Contributed by Sunin Baek
+        </div>
+      </div>
+
+      <div class="md-footer-meta__item md-footer-meta__item--right" 
+        style="display: flex; align-items: center;">
+
+        <a href="https://www.korea.ac.kr/sites/en/index.do" target="_blank" rel="noopener">
+          <img
+            src="../images/ku_logo.png"
+            alt="Korea University"
+            style="height: 30px;"
+          />
+        </a>
+
+        <a href="https://mintlab.korea.ac.kr/" target="_blank" rel="noopener">
+          <img
+            src="../images/mintlab_logo.png"
+            alt="MINT Lab"
+            style="height: 30px; margin-left: 12px;"
+          />
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.prune", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
