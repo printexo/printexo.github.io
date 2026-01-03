@@ -1,0 +1,99 @@
+site_name: PrintExo
+theme:
+  name: material
+
+
+  # site_url: https://printexo.github.io
+
+  palette:
+    primary: black
+    accent: light green
+
+  # logo: images/mintlab_logo.png
+  favicon: images/mintlab.ico
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.sections
+    - navigation.path
+    - navigation.prune
+    # navigation.indexes
+    - navigation.top
+
+    - toc.follow
+    - toc.integrate # not compatible with navigation.indexes
+
+    - search.suggest
+    - search.highlight
+    - search.share
+
+
+  custom_dir: overrides
+
+extra_css:
+  - stylesheets/extra.css
+
+    
+
+copyright: Copyright &copy; Korea University Movement Intelligence Laboratory(MINT Lab), All Rights Reserved.
+
+plugins:
+  - search
+
+
+#extra:
+  # version:
+  #   provider: mike
+
+#   analytics:
+#     provider: google
+#     property: G-XXXXXXXXXX
+
+
+nav:
+  - Home: index.md
+
+  - Quick Start: quick_start/index.md
+
+  - Build the Robot:
+      - Overview: hardware/index.md
+      - Bill of Materials (BOM): hardware/bom.md
+      - 3D Printing Guide: hardware/printing.md
+      - Assembly Guide: hardware/assembly.md
+
+  - Electronics & Control:
+      - Overview: elec_control/index.md
+      - Motor driver & configuration: elec_control/motor.md
+      - Wiring: elec_control/wiring.md
+      - Control software overview: elec_control/control.md
+      - Running demo: elec_control/demo.md
+
+  - Troubleshooting:
+      - Overview: troubleshooting/index.md
+      - Hardware Issues: troubleshooting/hardware.md
+      - Assembly Issues: troubleshooting/assembly.md
+      - Electronics & Control Issues: troubleshooting/elec_control.md
+
+  - Community & Resources:
+      - Overview: comm_res/index.md
+      - FAQ: comm_res/faq.md
+      - Paper & citation: comm_res/citation.md
+      - Contact: comm_res/contact.md
+      - Contribute: comm_res/contribute.md
+  
+  - Updates:
+      - updates/index.md
+
+  # - Workshop / Course:
+  #     - lessons/index.md
+  #     - Lesson 1 — Introduction: lessons/lesson1_intro.md
+  #     - Lesson 2 — 3D Printing: lessons/lesson2_printing.md
+  #     - Lesson 3 — Assembly: lessons/lesson3_assembly.md
+  #     - Lesson 4 — Electronics & Control: lessons/lesson4_elec_control.md
+  #     - Lesson 5 — Walking demo: lessons/lesson5_demo.md
+  #     - Final Project: lessons/final_project.md

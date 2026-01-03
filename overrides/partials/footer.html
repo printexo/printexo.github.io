@@ -1,0 +1,55 @@
+{% set show_footer_nav = page and "navigation.footer" in config.theme.features %}
+
+<footer class="md-footer">
+  {% if show_footer_nav %}
+    {% include "partials/footer-nav.html" %}
+  {% endif %}
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <div class="md-footer-meta__item">
+
+        {% if config.copyright %}
+          <div>
+            {{ config.copyright | safe }}
+          </div>
+        {% endif %}
+
+        {% if config.extra.generator is not defined or config.extra.generator %}
+          <div>
+            Made with <a href="https://squidfunk.github.io/mkdocs-material/">
+              Material for MkDocs
+            </a>
+          </div>
+        {% endif %}
+
+        <div>
+          Contributed by Sunin Baek
+        </div>
+      </div>
+
+      <div class="md-footer-meta__item md-footer-meta__item--right" 
+        style="display: flex; align-items: center;">
+
+        <a href="https://www.korea.ac.kr/sites/en/index.do" target="_blank" rel="noopener">
+          <img
+            src="{{ base_url }}/images/ku_logo.png"
+            alt="Korea University"
+            style="height: 30px;"
+          />
+        </a>
+
+        <a href="https://mintlab.korea.ac.kr/" target="_blank" rel="noopener">
+          <img
+            src="{{ base_url }}/images/mintlab_logo.png"
+            alt="MINT Lab"
+            style="height: 30px; margin-left: 12px;"
+          />
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
