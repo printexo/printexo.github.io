@@ -4,17 +4,6 @@ Welcome to the PrintExo community! This section provides resources for users, co
 
 ---
 
-## Quick Navigation
-
-| Page | Description |
-|------|-------------|
-| [FAQ](faq.md) | Frequently asked questions about PrintExo |
-| [Paper & Citation](citation.md) | How to cite PrintExo in academic work |
-| [Contact](contact.md) | Reach the development team |
-| [Contribute](contribute.md) | How to contribute to the project |
-
----
-
 ## About PrintExo
 
 PrintExo is an open-source, shoe-agnostic, 3D-printable ankle exoskeleton developed by the **Movement Intelligence Laboratory (MINT Lab)** at Korea University.
