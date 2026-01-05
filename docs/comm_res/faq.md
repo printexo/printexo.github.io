@@ -1,51 +1,77 @@
 # Frequently Asked Questions (FAQ)
 
-> ❓ **Note:** This page is a placeholder.  
-> Add or edit questions as the project evolves.
+---
+
+## General
+
+### What is PrintExo?
+PrintExo is an open-source, 3D-printable ankle exoskeleton designed to lower the barriers to wearable robotics research and education. It uses consumer-grade FDM printers and standard off-the-shelf components.
+
+### Who developed PrintExo?
+PrintExo was developed by the **Movement Intelligence Laboratory (MINT Lab)** at Korea University.
+
+### Is PrintExo free to use?
+Yes. PrintExo is open-source. All CAD files, documentation, and software are freely available.
 
 ---
 
-## ▶ General
+## Hardware
 
-### Q1. What is PrintExo?
-_Placeholder answer._
+### What 3D printer do I need?
+Any consumer-grade FDM 3D printer. We recommend the Bambu Lab X1C, but other printers work as well.
 
-### Q2. Who can use PrintExo?
-_Placeholder answer._
+### What material should I use?
+**PLA** is recommended for ease of printing. PETG or carbon-fiber–reinforced filaments are also compatible for improved durability.
 
-### Q3. Is PrintExo a medical device?
-_Placeholder answer._
+### How long does it take to print all parts?
+Approximately **2 days per leg** (1 day 23 hours 51 minutes) with 70% gyroid infill and supports.
 
----
+### How much filament do I need?
+About **950 g per leg** (model + supports).
 
-## ▶ Usage & Safety
-
-### Q4. Can I use PrintExo without supervision?
-_Placeholder answer._
-
-### Q5. Do experiments require IRB approval?
-_Placeholder answer._
+### What motor does PrintExo use?
+CubeMars AK60-6 V1.1 KV140 actuator with integrated driver.
 
 ---
 
-## ▶ Building & Hardware
+## Assembly
 
-### Q6. Do I need special fabrication equipment?
-_Placeholder answer._
+### What tools do I need?
+- Hex key set (2.5 mm for M3)
+- Screwdriver
+- Drill bits (2.5 mm, 3.0 mm)
+- M3 hand tap
+- Calipers
+- Needle-nose pliers
 
-### Q7. What if the printed parts do not fit?
-_Placeholder answer._
+### How long does assembly take?
+Approximately 2–4 hours for a first-time builder, less with experience.
 
----
-
-## ▶ Electronics & Control
-
-### Q8. Do I need programming experience?
-_Placeholder answer._
-
-### Q9. The motor does not move — what should I check first?
-_Placeholder answer._
+### Do I need special skills?
+Basic mechanical assembly skills are sufficient. No machining or specialized equipment required.
 
 ---
 
-> ✏️ Replace “_Placeholder answer._” with real content when ready.
+## Usage
+
+### What shoes can I use with PrintExo?
+Any lace-up shoe. The shoe interface is designed to be **shoe-agnostic** and attaches through standard shoelaces.
+
+### Is PrintExo safe to wear?
+PrintExo is a research platform. Always perform bench testing before human trials, start with zero-torque mode, and follow all safety guidelines in the documentation.
+
+### Can I modify the design?
+Yes. Editable CAD files (.f3d) are provided. We encourage modifications and improvements.
+
+---
+
+## Troubleshooting
+
+### Where can I find solutions to common problems?
+See the [Troubleshooting](../troubleshooting/index.md) section for hardware, assembly, and electronics issues.
+
+### My question isn't answered here. What should I do?
+- Check the [Troubleshooting](../troubleshooting/index.md) section
+- Review the documentation for your specific issue
+- [Contact](contact.md) the development team
+- Open an issue on GitHub

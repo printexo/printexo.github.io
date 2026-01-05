@@ -1,18 +1,42 @@
 # Community & Resources
 
-This section brings together:
+Welcome to the PrintExo community! This section provides resources for users, contributors, and researchers.
 
-- community participation (contributing)
-- general questions and guidance (FAQ)
-- scientific references and citation information
-- contact information for the project team
+---
 
-Use this section if you want to:
+## Quick Navigation
 
-- get involved in PrintExo development
-- learn more about how to use or cite PrintExo
-- find answers to common questions
-- contact the authors
+| Page | Description |
+|------|-------------|
+| [FAQ](faq.md) | Frequently asked questions about PrintExo |
+| [Paper & Citation](citation.md) | How to cite PrintExo in academic work |
+| [Contact](contact.md) | Reach the development team |
+| [Contribute](contribute.md) | How to contribute to the project |
 
-> ✏️ This is a placeholder index page.  
-> You can later add links, diagrams, or community announcements here.
+---
+
+## About PrintExo
+
+PrintExo is an open-source, shoe-agnostic, 3D-printable ankle exoskeleton developed by the **Movement Intelligence Laboratory (MINT Lab)** at Korea University.
+
+### Project Goals
+
+- **Lower barriers** to ankle exoskeleton research and education
+- **Open-source hardware** — fully 3D-printable with standard components
+- **Accessible documentation** — comprehensive guides for all skill levels
+- **Community-driven** — contributions and feedback welcome
+
+---
+
+## Get Involved
+
+- **Build your own** — Follow the [Build the Robot](../hardware/index.md) guide
+- **Report issues** — Use GitHub Issues for bugs and suggestions
+- **Contribute** — See [Contribute](contribute.md) for guidelines
+- **Share your work** — Tag us when you build or modify PrintExo
+
+---
+
+## Stay Updated
+
+Check the [Updates](../updates/index.md) page for the latest changes to hardware, software, and documentation.
