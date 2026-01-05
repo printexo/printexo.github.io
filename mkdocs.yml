@@ -1,9 +1,8 @@
 site_name: PrintExo
+site_url: https://printexo.github.io
+
 theme:
   name: material
-
-
-  site_url: https://printexo.github.io
 
   palette:
     primary: black
@@ -87,7 +86,7 @@ nav:
       - Contribute: comm_res/contribute.md
   
   - Updates:
-      - updates/index.md
+      - Overview: updates/index.md
 
   # - Workshop / Course:
   #     - lessons/index.md
