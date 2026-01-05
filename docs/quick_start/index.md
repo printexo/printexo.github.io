@@ -9,7 +9,7 @@ After reading this page, you will understand:
 
 ---
 
-## 🧭 What is PrintExo?
+## What is PrintExo?
 
 PrintExo is an ankle exoskeleton platform developed with the following primary objective:
 
@@ -34,12 +34,12 @@ PrintExo is intended for:
 - classroom education and workshops  
 - pilot validation studies  
 
-> ⚠ PrintExo is a **prototype research platform**.  
+> **Warning:** PrintExo is a **prototype research platform**.  
 > It is **not a certified medical device** and should not be used for diagnosis, treatment, rehabilitation, or unsupervised assistance.
 
 ---
 
-## 🛠 System Components
+## System Components
 
 PrintExo consists of four major subsystems that work together to deliver ankle assistance.
 
@@ -103,7 +103,7 @@ Real-time gait phase estimation is performed using:
 
 ---
 
-## 📚 How to Use This Documentation
+## How to Use This Documentation
 
 The documentation is structured to support:
 
@@ -116,27 +116,18 @@ The documentation is structured to support:
 
 Follow this order:
 
-1. **Bill of Materials (BOM)**
-2. **3D Printing Guide**
-3. **Assembly Guide**
-4. **Electronics Overview**
-5. **Motor Driver and Configuration**
-6. **Running Demo**
+1. [Bill of Materials (BOM)](../hardware/bom.md)
+2. [3D Printing Guide](../hardware/printing.md)
+3. [Assembly Guide](../hardware/assembly.md)
+4. [Electronics Overview](../elec_control/index.md)
+5. [Motor Driver and Configuration](../elec_control/motor.md)
+6. [Running Demo](../elec_control/demo.md)
 
 ---
 
 ### If you are teaching or learning
 
-See the **Workshop / Course** section:
-
-- Lesson 1 — Introduction  
-- Lesson 2 — 3D Printing  
-- Lesson 3 — Assembly  
-- Lesson 4 — Electronics & Control  
-- Lesson 5 — Walking Demo  
-- Final project module  
-
-These materials are intended to support structured curricula.
+Workshop and course materials are coming soon. For now, follow the build guides step-by-step.
 
 ---
 
@@ -144,10 +135,8 @@ These materials are intended to support structured curricula.
 
 You may refer to:
 
-- **System Design**
-- **Fabrication & Implementation**
-- **Pilot Validation**
-- **Citation information**
+- [Build the Robot — Overview](../hardware/index.md)
+- [Paper & Citation](../comm_res/citation.md)
 
 ---
 
@@ -155,21 +144,19 @@ You may refer to:
 
 Check:
 
-- Hardware troubleshooting  
-- Electronics troubleshooting  
-- Software troubleshooting  
+- [Hardware Troubleshooting](../troubleshooting/hardware.md)
+- [Assembly Troubleshooting](../troubleshooting/assembly.md)
+- [Electronics Troubleshooting](../troubleshooting/elec_control.md)
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 Recommended reading order:
 
-1. **System Design**
-2. **Bill of Materials (BOM)**
-3. **3D Printing Guide**
-4. **Assembly Guide**
+1. [Build the Robot — Overview](../hardware/index.md)
+2. [Bill of Materials (BOM)](../hardware/bom.md)
+3. [3D Printing Guide](../hardware/printing.md)
+4. [Assembly Guide](../hardware/assembly.md)
 
-From there, continue to electronics and control.
-
----
+From there, continue to [Electronics & Control](../elec_control/index.md).

@@ -166,3 +166,11 @@ Perform these checks after completing assembly:
 | Rigid mounting | No play at connection point | Tighten bolts, verify fit |
 | Lace tension | Even across all guides | Relace following guide pattern |
 | Plantar guides secure | No looseness | Verify installation |
+
+---
+
+## See Also
+
+- [Troubleshooting — Hardware Issues](hardware.md)
+- [Assembly Guide](../hardware/assembly.md)
+- [3D Printing Guide](../hardware/printing.md)

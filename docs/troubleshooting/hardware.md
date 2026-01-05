@@ -127,3 +127,11 @@ Before troubleshooting, verify:
 - [ ] Shoe interface is securely attached
 - [ ] Laces are properly tensioned
 - [ ] Motor is unpowered during inspection
+
+---
+
+## See Also
+
+- [Troubleshooting — Assembly Issues](assembly.md)
+- [3D Printing Guide](../hardware/printing.md)
+- [Assembly Guide](../hardware/assembly.md)

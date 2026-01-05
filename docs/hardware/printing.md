@@ -147,3 +147,16 @@ After printing, perform the following steps:
 | Holes too loose | Under-extrusion | Increase flow rate, or use smaller drill bit |
 | Stringing | High temp, no retraction | Lower temp, enable/increase retraction |
 | Z-seam visible | Slicer settings | Set seam position to "sharpest corner" or "rear" |
+
+---
+
+## Next Steps
+
+After completing all prints and post-processing:
+
+- [Assembly Guide](assembly.md) — Step-by-step assembly instructions
+- [Bill of Materials](bom.md) — Verify all components are ready
+
+### Having Issues?
+
+- [Troubleshooting — Hardware Issues](../troubleshooting/hardware.md) — Print quality and fit problems
