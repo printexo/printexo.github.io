@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://printexo.github.io/hardware/printing/">
+      
       
         <link rel="prev" href="../bom/">
       
@@ -597,6 +599,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printing-estimates-per-leg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printing Estimates (per leg)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -607,6 +626,56 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Required Printing Equipment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicer-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicer Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -630,6 +699,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="4. Print Orientation &amp; Strength Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-orientations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical Orientations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -651,6 +748,56 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="6. Post-processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-support-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Support Removal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-surface-finishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Surface Finishing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-hole-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Hole Preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-dimensional-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Dimensional Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -979,24 +1126,92 @@
 
 
 <h1 id="3d-printing-guide">3D Printing Guide</h1>
-<blockquote>
-<p>🖨️ <strong>Note:</strong> This page is a placeholder.<br />
-Fill in printer settings, part-specific notes, and troubleshooting guidance later.</p>
-</blockquote>
+<p>This page provides detailed instructions for 3D printing all custom structural components of PrintExo.</p>
 <hr />
 <h2 id="1-overview">1. Overview</h2>
-<p><em>Describe here:</em>
-- which parts are 3D printed
-- recommended printers
-- recommended materials (PLA, PETG, etc.)
-- estimated total print time</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>All custom parts are designed for <strong>consumer-grade FDM printers</strong></li>
+<li>Primary material: <strong>PLA</strong> (PETG or carbon-fiber–reinforced filaments also compatible)</li>
+</ul>
+<p>The following subsystems require 3D-printed components:</p>
+<table>
+<thead>
+<tr>
+<th>Subsystem</th>
+<th>Components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actuation module</td>
+<td>Planetary gear stage, protective casing</td>
+</tr>
+<tr>
+<td>Shank structure</td>
+<td>Shank body, passive hinge</td>
+</tr>
+<tr>
+<td>Shoe interface</td>
+<td>Dorsal component, plantar guides</td>
+</tr>
+</tbody>
+</table>
+<h3 id="printing-estimates-per-leg">Printing Estimates (per leg)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total print time</td>
+<td>1 day 23 hours 51 minutes</td>
+</tr>
+<tr>
+<td>Model filament</td>
+<td>928.70 g</td>
+</tr>
+<tr>
+<td>Support filament</td>
+<td>21.22 g</td>
+</tr>
+<tr>
+<td><strong>Total filament</strong></td>
+<td><strong>949.92 g</strong></td>
+</tr>
+<tr>
+<td>Estimated cost</td>
+<td>$23.74</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Estimates based on 70% gyroid infill with supports. Actual values may vary depending on printer, slicer settings, and filament brand.</p>
+</blockquote>
 <hr />
 <h2 id="2-required-printing-equipment">2. Required Printing Equipment</h2>
+<h3 id="printer">Printer</h3>
 <ul>
-<li><em>Placeholder printer model</em></li>
-<li><em>Placeholder nozzle diameter</em></li>
-<li><em>Placeholder slicer software</em></li>
-<li><em>Optional enclosure / dryer</em></li>
+<li><strong>Recommended:</strong> Bambu Lab X1C (or equivalent enclosed FDM printer)</li>
+<li><strong>Minimum requirements:</strong> 220 × 220 × 250 mm build volume</li>
+</ul>
+<h3 id="nozzle">Nozzle</h3>
+<ul>
+<li><strong>Diameter:</strong> 0.4 mm (standard)</li>
+<li>Hardened steel nozzle recommended for abrasive filaments</li>
+</ul>
+<h3 id="slicer-software">Slicer Software</h3>
+<ul>
+<li>Bambu Studio (for Bambu Lab printers)</li>
+<li>PrusaSlicer, Cura, or equivalent</li>
+</ul>
+<h3 id="optional">Optional</h3>
+<ul>
+<li>Filament dryer (recommended for hygroscopic materials like PETG)</li>
+<li>Enclosed chamber (improves print consistency)</li>
 </ul>
 <hr />
 <h2 id="3-general-print-settings">3. General Print Settings</h2>
@@ -1011,94 +1226,265 @@ Fill in printer settings, part-specific notes, and troubleshooting guidance late
 <tbody>
 <tr>
 <td>Layer height</td>
-<td><em>TBD</em></td>
-<td></td>
+<td>0.20 mm</td>
+<td>Balance between speed and strength</td>
 </tr>
 <tr>
 <td>Nozzle diameter</td>
-<td><em>TBD</em></td>
-<td></td>
+<td>0.4 mm</td>
+<td>Standard</td>
 </tr>
 <tr>
-<td>Infill type</td>
-<td><em>TBD</em></td>
-<td></td>
+<td>Infill pattern</td>
+<td>Gyroid</td>
+<td>Good omnidirectional strength</td>
 </tr>
 <tr>
 <td>Infill ratio</td>
-<td><em>TBD</em></td>
-<td></td>
+<td>70%</td>
+<td>For structural rigidity</td>
 </tr>
 <tr>
-<td>Perimeters</td>
-<td><em>TBD</em></td>
-<td></td>
+<td>Perimeters (walls)</td>
+<td>4</td>
+<td>Increases shell strength</td>
+</tr>
+<tr>
+<td>Top/Bottom layers</td>
+<td>5</td>
+<td>Ensures solid surfaces</td>
 </tr>
 <tr>
 <td>Support</td>
-<td><em>Yes/No</em></td>
-<td></td>
+<td>Part-dependent</td>
+<td>See Part-by-Part notes</td>
 </tr>
 <tr>
 <td>Material</td>
-<td><em>PLA / PETG / etc.</em></td>
-<td></td>
+<td>PLA</td>
+<td>PETG or CF-PLA also compatible</td>
+</tr>
+<tr>
+<td>Bed temperature</td>
+<td>60°C</td>
+<td>For PLA</td>
+</tr>
+<tr>
+<td>Nozzle temperature</td>
+<td>210°C</td>
+<td>Adjust per filament brand</td>
 </tr>
 </tbody>
 </table>
-<p><em>Add real values later.</em></p>
 <hr />
 <h2 id="4-print-orientation-strength-considerations">4. Print Orientation &amp; Strength Considerations</h2>
-<p><em>Use this section to describe:</em>
-- which parts are load-bearing<br />
-- how to orient parts to avoid inter-layer shear<br />
-- recommended brim/raft strategy  </p>
+<p>FDM prints exhibit <strong>anisotropic strength</strong> — they are weakest along the layer lines (Z-axis).</p>
+<h3 id="guidelines">Guidelines</h3>
+<ol>
+<li>
+<p><strong>Load-bearing parts</strong> should be oriented so that primary stresses act <strong>parallel to the print bed</strong> (X-Y plane), not perpendicular (Z-axis).</p>
+</li>
+<li>
+<p><strong>Planetary gears</strong> require careful orientation to ensure tooth strength and smooth meshing.</p>
+</li>
+<li>
+<p><strong>Use brims</strong> (5–10 mm) for parts with small footprints to prevent warping and improve bed adhesion.</p>
+</li>
+<li>
+<p><strong>Avoid rafts</strong> unless absolutely necessary — they can affect dimensional accuracy on mating surfaces.</p>
+</li>
+</ol>
+<h3 id="critical-orientations">Critical Orientations</h3>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Recommended Orientation</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shank body</td>
+<td>Vertical (standing)</td>
+<td>Maximizes bending strength</td>
+</tr>
+<tr>
+<td>Gear components</td>
+<td>Flat (teeth facing up)</td>
+<td>Preserves tooth geometry</td>
+</tr>
+<tr>
+<td>Shoe interface</td>
+<td>Flat</td>
+<td>Ensures accurate mounting surfaces</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="5-part-by-part-printing-notes">5. Part-by-Part Printing Notes</h2>
 <table>
 <thead>
 <tr>
-<th>Part name</th>
+<th>Part Name</th>
+<th>Quantity</th>
 <th>Orientation</th>
 <th>Support</th>
-<th>Special notes</th>
+<th>Infill</th>
+<th>Special Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><em>Placeholder</em></td>
-<td><em>TBD</em></td>
-<td><em>TBD</em></td>
-<td><em>TBD</em></td>
+<td>Sun gear</td>
+<td>1</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>—</td>
 </tr>
 <tr>
-<td><em>Placeholder</em></td>
-<td><em>TBD</em></td>
-<td><em>TBD</em></td>
-<td><em>TBD</em></td>
+<td>Planet gear</td>
+<td>3</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>Print bearings separately</td>
+</tr>
+<tr>
+<td>Ring gear</td>
+<td>1</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>Check inner teeth quality</td>
+</tr>
+<tr>
+<td>Carrier</td>
+<td>1</td>
+<td>Flat</td>
+<td>Yes</td>
+<td>70%</td>
+<td>Remove supports carefully</td>
+</tr>
+<tr>
+<td>Motor casing</td>
+<td>1</td>
+<td>Upright</td>
+<td>Yes</td>
+<td>50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Shank body</td>
+<td>1</td>
+<td>Vertical</td>
+<td>Yes</td>
+<td>70%</td>
+<td>Orient for bending load</td>
+</tr>
+<tr>
+<td>Hinge component</td>
+<td>2</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Dorsal interface</td>
+<td>1</td>
+<td>Flat</td>
+<td>Yes</td>
+<td>70%</td>
+<td>Size-specific</td>
+</tr>
+<tr>
+<td>Plantar guide</td>
+<td>2</td>
+<td>Flat</td>
+<td>No</td>
+<td>50%</td>
+<td>—</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p><strong>Note:</strong> This table is an example. Refer to the CAD files for the complete part list.</p>
+</blockquote>
 <hr />
 <h2 id="6-post-processing">6. Post-processing</h2>
-<p>Typical steps (edit as needed):</p>
+<p>After printing, perform the following steps:</p>
+<h3 id="61-support-removal">6.1 Support Removal</h3>
 <ul>
-<li>remove supports  </li>
-<li>light sanding  </li>
-<li>hole reaming / tapping  </li>
-<li>tolerance adjustments  </li>
+<li>Use flush cutters or needle-nose pliers</li>
+<li>Be careful around gear teeth and mounting holes</li>
+</ul>
+<h3 id="62-surface-finishing">6.2 Surface Finishing</h3>
+<ul>
+<li>Light sanding (220–400 grit) on mating surfaces</li>
+<li>Focus on surfaces that interface with bearings or fasteners</li>
+</ul>
+<h3 id="63-hole-preparation">6.3 Hole Preparation</h3>
+<ul>
+<li><strong>Reaming:</strong> Use appropriately sized drill bits to clean up holes</li>
+<li><strong>Tapping:</strong> M3 holes may require tapping for secure bolt threads</li>
+<li>Use a hand tap to avoid cracking the plastic</li>
+</ul>
+<h3 id="64-dimensional-verification">6.4 Dimensional Verification</h3>
+<ul>
+<li>Check critical dimensions with calipers</li>
+<li>Gear mesh should be smooth without binding</li>
+<li>Bearing press-fit should be snug but not overly tight</li>
 </ul>
 <hr />
 <h2 id="7-common-printing-issues">7. Common Printing Issues</h2>
-<p><em>Add tips for:</em>
-- warping<br />
-- layer delamination<br />
-- tolerance misfit<br />
-- gear surface finish  </p>
-<hr />
-<blockquote>
-<p>✏️ Replace placeholder text as you finalize printing specifications.</p>
-</blockquote>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Possible Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Warping</td>
+<td>Poor bed adhesion, no enclosure</td>
+<td>Use brim, increase bed temp, use enclosure</td>
+</tr>
+<tr>
+<td>Layer delamination</td>
+<td>Under-extrusion, low temp</td>
+<td>Increase nozzle temp, check filament quality</td>
+</tr>
+<tr>
+<td>Poor gear tooth finish</td>
+<td>Too fast, insufficient cooling</td>
+<td>Reduce speed for outer walls, increase cooling</td>
+</tr>
+<tr>
+<td>Holes too tight</td>
+<td>Over-extrusion</td>
+<td>Calibrate flow rate, or ream holes after printing</td>
+</tr>
+<tr>
+<td>Holes too loose</td>
+<td>Under-extrusion</td>
+<td>Increase flow rate, or use smaller drill bit</td>
+</tr>
+<tr>
+<td>Stringing</td>
+<td>High temp, no retraction</td>
+<td>Lower temp, enable/increase retraction</td>
+</tr>
+<tr>
+<td>Z-seam visible</td>
+<td>Slicer settings</td>
+<td>Set seam position to "sharpest corner" or "rear"</td>
+</tr>
+</tbody>
+</table>
 
 
 
