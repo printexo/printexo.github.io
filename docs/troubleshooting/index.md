@@ -4,22 +4,12 @@ This section provides solutions for common issues encountered when building and 
 
 ---
 
-## Quick Navigation
-
-| Category | Description |
-|----------|-------------|
-| [Hardware Issues](hardware.md) | Mechanical fit, gearbox, structural failures, attachment problems |
-| [Assembly Issues](assembly.md) | Part orientation, gear assembly, fasteners, bearings |
-| [Electronics & Control Issues](elec_control.md) | Motor, wiring, sensors, software problems |
-
----
-
 ## General Troubleshooting Approach
 
 1. **Identify the symptom** — What exactly is happening?
 2. **Isolate the subsystem** — Is it mechanical, electrical, or software?
 3. **Check the basics first** — Loose bolts? Unplugged cables? Low battery?
-4. **Consult the relevant page** — Use the links above
+4. **Consult the relevant page** — Use the navigation menu to find your issue
 5. **Document the issue** — If unresolved, report with photos and details
 
 ---
