@@ -37,7 +37,7 @@ The following subsystems require 3D-printed components:
 
 ### Printer
 - **Recommended:** Bambu Lab X1C (or equivalent enclosed FDM printer)
-- **Minimum requirements:** 220 × 220 × 250 mm build volume
+- Any consumer-grade FDM 3D printer is compatible
 
 ### Nozzle
 - **Diameter:** 0.4 mm (standard)
