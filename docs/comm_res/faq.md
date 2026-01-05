@@ -8,7 +8,7 @@
 PrintExo is an open-source, 3D-printable ankle exoskeleton designed to lower the barriers to wearable robotics research and education. It uses consumer-grade FDM printers and standard off-the-shelf components.
 
 ### Who developed PrintExo?
-PrintExo was developed by the **Movement Intelligence Laboratory (MINT Lab)** at Korea University.
+PrintExo was developed by the [**Movement Intelligence Laboratory (MINT Lab)**](https://mintlab.korea.ac.kr/) at Korea University.
 
 ### Is PrintExo free to use?
 Yes. PrintExo is open-source. All CAD files, documentation, and software are freely available.
