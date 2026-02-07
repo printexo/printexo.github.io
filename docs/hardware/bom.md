@@ -85,7 +85,7 @@ The following tools are commonly required for assembly but are not included in t
 
 ---
 
-## 6. Substitutions & Alternatives
+## 7. Substitutions & Alternatives
 
 - **Fasteners and bearings:**  
   Equivalent metric components may be substituted if dimensions match.
