@@ -2,6 +2,21 @@
 
 This page provides detailed instructions for 3D printing all custom structural components of PrintExo.
 
+## CAD Files
+
+All CAD files required for 3D printing PrintExo are provided as open-source resources.
+
+- **Printable STL files** for all structural components, organized by left/right assemblies and individual parts  
+- **Editable Fusion 360 parametric models (.f3d)** for design inspection and modification  
+- **Parametric export script (`PrintExo_code.py`)** that allows users to adjust the shoe-width parameter and automatically export a corresponding STL file from Fusion 360
+
+👉 **Download CAD files:**  
+[Google Drive – PrintExo CAD Release](https://drive.google.com/drive/folders/1tcYwJKkRYvDyukaBFUs_2lasKkoU8P6Q?usp=drive_link)
+
+
+
+
+
 ---
 
 ## 1. Overview
