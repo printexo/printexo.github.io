@@ -21,7 +21,7 @@ theme:
     #- navigation.sections
     - navigation.path
     - navigation.prune
-    - navigation.indexes
+    # navigation.indexes
     - navigation.top
 
     - toc.follow
