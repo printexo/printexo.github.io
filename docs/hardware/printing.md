@@ -6,9 +6,9 @@ This page provides detailed instructions for 3D printing all custom structural c
 
 All CAD files required for 3D printing PrintExo are provided as open-source resources.
 
-- **Printable STL files** for all structural components, organized by left/right assemblies and individual parts  
-- **Editable Fusion 360 parametric models (.f3d)** for design inspection and modification  
-- **Parametric export script (`PrintExo_code.py`)** that allows users to adjust the shoe-width parameter and automatically export a corresponding STL file from Fusion 360
+- Printable STL files for all structural components  
+- Editable Fusion 360 parametric models (.f3d)  
+- Optional parametric export script for shoe-width customization
 
 👉 **Download CAD files:**  
 [Google Drive – PrintExo CAD Release](https://drive.google.com/drive/folders/1tcYwJKkRYvDyukaBFUs_2lasKkoU8P6Q?usp=drive_link)
@@ -142,7 +142,6 @@ After printing, perform the following steps:
 ### 6.3 Hole Preparation
 - **Reaming:** Use appropriately sized drill bits to clean up holes
 - **Tapping:** M3 holes may require tapping for secure bolt threads
-- Use a hand tap to avoid cracking the plastic
 
 ### 6.4 Dimensional Verification
 - Check critical dimensions with calipers
@@ -170,7 +169,6 @@ After printing, perform the following steps:
 After completing all prints and post-processing:
 
 - [Assembly Guide](assembly.md) — Step-by-step assembly instructions
-- [Bill of Materials](bom.md) — Verify all components are ready
 
 ### Having Issues?
 
