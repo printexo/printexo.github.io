@@ -4,9 +4,9 @@ This section describes how to **physically build PrintExo** based on its mechani
 
 The build pipeline is organized into:
 
-1. understanding the design principles,  
-2. fabricating the 3D-printed components,  
-3. sourcing hardware, and  
+1. understanding the design principles,
+2. defining the Bill of Materials (BOM),
+3. fabricating the 3D-printed components, and
 4. assembling the full device.
 
 ---
