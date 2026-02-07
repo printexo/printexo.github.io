@@ -21,11 +21,11 @@ theme:
     #- navigation.sections
     - navigation.path
     - navigation.prune
-    # navigation.indexes
+    - navigation.indexes
     - navigation.top
 
     - toc.follow
-    - toc.integrate # not compatible with navigation.indexes
+    # toc.integrate # not compatible with navigation.indexes
 
     - search.suggest
     - search.highlight
