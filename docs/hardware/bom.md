@@ -55,14 +55,22 @@ Instead, printing requirements are summarized as consumables.
 
 | Item | Specification | Qty | Unit Cost | Example Source | Notes |
 |:----:|:-------------:|:---:|:---------:|:--------------:|:-----:|
-| E01 | CubeMars AK60-6 V1.1 KV140 | 2 | $ 298.90 | [CubeMars](https://www.cubemars.com/product/ak60-6-v1-1-kv140-robotic-actuator.html) | One per leg, integrated driver |
+| A01 | CubeMars AK60-6 V1.1 KV140 | 2 | $ 298.90 | [CubeMars](https://www.cubemars.com/product/ak60-6-v1-1-kv140-robotic-actuator.html) | One per leg, integrated driver |
 > **Note:** This BOM covers the exoskeleton hardware platform; electrical design and power supply configurations may vary by use case, so only the actuator is specified here.
-
-
 
 ---
 
-## 5. Tools Required (Non-consumable)
+
+## 5. Etcs
+
+| Item | Specification | Qty | Unit Cost | Example Source | Notes |
+|:----:|:-------------:|:---:|:---------:|:--------------:|:-----:|
+| E01 | Calf compression sleeve | 2 | $ 16.99 | [Amazon](https://www.amazon.com/Vive-Calf-Brace-Compression-Circulation/dp/B0101BXKHM?th=1) | One per leg |
+| E02 | Shoe laces (auxiliary) | 2 | $ 10.00 | [Amazon](https://www.amazon.com/Miscly-Round-Durable-Shoelaces-Hiking/dp/B0D98SB5JT?th=1&psc=1) |  |
+
+---
+
+## 6. Tools Required (Non-consumable)
 
 The following tools are commonly required for assembly but are not included in the BOM cost.
 
