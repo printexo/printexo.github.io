@@ -28,6 +28,8 @@ Instead, printing requirements are summarized as consumables.
 | Item | Specification | Qty | Unit Cost | Example Source | Notes |
 |:----:|:-------------:|:---:|:---------:|:--------------:|:-----:|
 | P01 | PLA filament (1.0 kg) | 2 | $19.99 | [Bambu Store](https://kr.store.bambulab.com/products/pla-basic-filament?id=565422966019776519) | Any standard PLA filament is acceptable |
+
+
 > **Note:** Detailed part lists, orientations, and print settings are provided in the [3D Printing Guide](printing.md).
 
 ---
@@ -44,6 +46,8 @@ Instead, printing requirements are summarized as consumables.
 | H06 | M3 bolt, 40 mm | 4 | $0.05 | [MiSUMi](https://kr.misumi-ec.com/vona2/detail/221300250577/?list=PageCategory) |  |
 | H07 | Bearing (HK0810) | 8 | $2.71 | [MiSUMi](https://kr.misumi-ec.com/vona2/detail/221000068571/?HissuCode=HK0810&srsltid=AfmBOopc_61bB8nqXv06_OH-1Fif4HUJUN-m0MQhErcm6FwjCQKK_I0m) |  |
 | H08 | M3 plastic washer (spacer) | 2 | $0.42 | [MiSUMi](https://kr.misumi-ec.com/vona2/detail/221004999040/?srsltid=AfmBOoqMOtebLmETM_6xZZwp_zSu5yEmjtOMsrQxjlbbBfaBfQ7PFngH) |  |
+
+
 > **Note:** Unit costs are approximate, normalized estimates for budgeting consistency; actual prices vary by supplier and purchase volume.
 
 
@@ -56,6 +60,8 @@ Instead, printing requirements are summarized as consumables.
 | Item | Specification | Qty | Unit Cost | Example Source | Notes |
 |:----:|:-------------:|:---:|:---------:|:--------------:|:-----:|
 | A01 | CubeMars AK60-6 V1.1 KV140 | 2 | $ 298.90 | [CubeMars](https://www.cubemars.com/product/ak60-6-v1-1-kv140-robotic-actuator.html) | One per leg, integrated driver |
+
+
 > **Note:** This BOM covers the exoskeleton hardware platform; electrical design and power supply configurations may vary by use case, so only the actuator is specified here.
 
 ---
