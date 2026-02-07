@@ -14,7 +14,9 @@ PrintExo is designed to minimize sourcing complexity by:
 - enabling regional substitution where possible.
 
 The total hardware cost (excluding tools and the 3D printer) is approximately **$359** per leg.
+
 All listed components can be sourced from common online retailers or local suppliers.
+
 All costs in this BOM are listed in U.S. dollars (USD).
 
 
