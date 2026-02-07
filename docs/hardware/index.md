@@ -49,14 +49,6 @@ The actuation module includes:
 - a 3D-printed **1:4 planetary gear stage**, and  
 - a protective casing.
 
-Key characteristics:
-
-- The integrated driver simplifies communication and power management.  
-- The actuator provides 9 N·m peak torque.  
-- Prior work has used ankle-assist torques of approximately 0.20–0.70 N·m/kg (about 14–49.5 N·m for a 70-kg person), with real-world optimization reporting peak torques up to 54 N·m.  
-- To reach a more suitable torque range, the 1:4 planetary gear stage increases the peak output torque to **36 N·m**.  
-- Bearings are integrated at each planet gear to reduce frictional losses and improve mechanical efficiency.
-
 The motor, planetary stage, and casing form a single actuation unit that transmits torque to the shoe interface.
 
 ---
