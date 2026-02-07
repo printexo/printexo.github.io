@@ -1,6 +1,6 @@
 # Build the Robot
 
-This section walks you through how to **physically build PrintExo**—from parts sourcing to 3D printing and final assembly.
+This section walks you through how to **physically build PrintExo** — from parts sourcing to 3D printing and final assembly.
 
 PrintExo is designed to be:
 - **FDM-printable** using consumer desktop 3D printers,
