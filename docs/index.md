@@ -6,13 +6,22 @@
 
 ![PrintExo overview image](images/hero_printexo.png)
 
-> Wearable ankle exoskeletons are a key testbed for assistive control and human-robot interaction during locomotion, but many systems remain difficult to build and deploy due to fabrication and fitting overhead (e.g., CNC/composite processes, long lead times, and shoe-specific interfaces). 
-We present PrintExo, an open-source, shoe-agnostic, fully 3D-printable ankle exoskeleton platform designed to lower the barrier to early-stage locomotion research and rapid prototyping. 
-PrintExo can be fabricated using consumer-grade FDM printing and standard off-the-shelf components, and integrates a compact 3D-printed 1:4 planetary gearbox for ankle assistance(total assembled mass: 1.33 kg per leg, excluding the user’s shoe). 
-A lace-anchored shoe interface transmits torque through commercially available lace-up footwear without permanent modification, enabling fast fitting across participants. 
-The device was evaluated in a pilot treadmill study with five able-bodied participants walking at 1.0 m/s under three conditions: no-device, zero-torque, and powered assistance, and was reused sequentially across participants.
-Across completed sessions, powered assistance reduced metabolic cost relative to zero-torque, and encoder-derived kinematics captured device-side ankle motion during torque application.
-Overall, PrintExo provides a practical, low-overhead, open-source platform for accessible ankle-exoskeleton prototyping and pilot locomotion experiments.
+<details>
+<summary><strong>📄 Paper Abstract (click to expand)</strong></summary>
+
+Wearable ankle exoskeletons are a key testbed for assistive control and human-robot interaction during locomotion, but many systems remain difficult to build and deploy due to fabrication and fitting overhead (e.g., CNC/composite processes, long lead times, and shoe-specific interfaces).
+
+We present **PrintExo**, an open-source, shoe-agnostic, fully 3D-printable ankle exoskeleton platform designed to lower the barrier to early-stage locomotion research and rapid prototyping. PrintExo can be fabricated using consumer-grade FDM printing and standard off-the-shelf components, and integrates a compact 3D-printed **1:4 planetary gearbox** for ankle assistance (total assembled mass: **1.33 kg per leg**, excluding the user’s shoe).
+
+A **lace-anchored shoe interface** transmits torque through commercially available lace-up footwear without permanent modification, enabling fast fitting across participants.
+
+The device was evaluated in a pilot treadmill study with five able-bodied participants walking at **1.0 m/s** under three conditions: no-device, zero-torque, and powered assistance. Across completed sessions, powered assistance reduced metabolic cost relative to zero-torque, and encoder-derived kinematics captured device-side ankle motion during torque application.
+
+Overall, PrintExo provides a **practical, low-overhead, open-source platform** for accessible ankle-exoskeleton prototyping and pilot locomotion experiments.
+
+
+</details>
+
 
 ---
 
