@@ -67,7 +67,7 @@ nav:
       - Shoelace Fixation Guide: hardware/shoelace.md
 
   - Electronics & Control:
-      - Overview: elec_control/index.md
+      - Electronics & Control: elec_control/index.md
       #- Motor driver & configuration: elec_control/motor.md
       #- Wiring: elec_control/wiring.md
       #- Control software overview: elec_control/control.md
