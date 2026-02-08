@@ -66,28 +66,27 @@ nav:
       - Assembly Guide: hardware/assembly.md
       - Shoelace Fixation Guide: hardware/shoelace.md
 
-  - Electronics & Control:
-      - Electronics & Control: elec_control/index.md
+  - Electronics & Control: elec_control/index.md
+      #- Overview: elec_control/index.md
       #- Motor driver & configuration: elec_control/motor.md
       #- Wiring: elec_control/wiring.md
       #- Control software overview: elec_control/control.md
       #- Running demo: elec_control/demo.md
 
-  - Troubleshooting:
-      - Overview: troubleshooting/index.md
-      - Hardware Issues: troubleshooting/hardware.md
-      - Assembly Issues: troubleshooting/assembly.md
-      - Electronics & Control Issues: troubleshooting/elec_control.md
+  - Troubleshooting: troubleshooting/index.md
+      #- Overview: troubleshooting/index.md
+      #- Hardware Issues: troubleshooting/hardware.md
+      #- Assembly Issues: troubleshooting/assembly.md
+      #- Electronics & Control Issues: troubleshooting/elec_control.md
 
-  - Community & Resources:
-      - Overview: comm_res/index.md
-      - FAQ: comm_res/faq.md
-      - Paper & citation: comm_res/citation.md
-      - Contact: comm_res/contact.md
-      - Contribute: comm_res/contribute.md
+  #- Community & Resources:
+      #- Overview: comm_res/index.md
+      #- FAQ: comm_res/faq.md
+      #- Paper & citation: comm_res/citation.md
+      #- Contact: comm_res/contact.md
+      #- Contribute: comm_res/contribute.md
   
-  - Updates:
-      - Overview: updates/index.md
+  - Updates: updates/index.md
 
   # - Workshop / Course:
   #     - lessons/index.md
