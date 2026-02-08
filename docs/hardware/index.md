@@ -13,7 +13,7 @@ PrintExo is designed to be:
 
 1. **Bill of Materials (BOM)** – what to buy  
 2. **3D Printing Guide** – what to print and recommended settings  
-3. **Assembly Guide** – step-by-step build and fitting  
+3. **Assembly Guide & Shoelace Fixation Guide** – step-by-step build and fitting
 
 ---
 
@@ -22,6 +22,7 @@ PrintExo is designed to be:
 - [Bill of Materials (BOM)](bom.md)  
 - [3D Printing Guide](printing.md)  
 - [Assembly Guide](assembly.md)
+- [Shoelace Fixation Guide](assembly.md)
 
 ---
 
