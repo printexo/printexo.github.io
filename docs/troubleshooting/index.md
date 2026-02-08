@@ -1,33 +1,21 @@
 # Troubleshooting
 
-This section provides solutions for common issues encountered when building and operating PrintExo.
+This section will be **expanded in future releases** as common build and operation issues are identified through community use.
+
+At this stage, troubleshooting guidance is intentionally minimal to prioritize:
+- independent replication,
+- real-world usage feedback,
+- and direct communication during early adoption.
 
 ---
 
-## General Troubleshooting Approach
+## Contact
 
-1. **Identify the symptom** — What exactly is happening?
-2. **Isolate the subsystem** — Is it mechanical, electrical, or software?
-3. **Check the basics first** — Loose bolts? Unplugged cables? Low battery?
-4. **Consult the relevant page** — Use the navigation menu to find your issue
-5. **Document the issue** — If unresolved, report with photos and details
+If you encounter issues while building or operating PrintExo,  
+please contact the author with a brief description of the problem.
 
----
+Including photos, short videos, and relevant build details is highly encouraged.
 
-## Before You Troubleshoot
-
-- [ ] Power off the device
-- [ ] Disconnect motor from power source
-- [ ] Ensure workspace is clean and well-lit
-- [ ] Have required tools ready
-- [ ] Review relevant assembly/wiring documentation
-
----
-
-## Need More Help?
-
-If your issue is not covered here:
-
-- Check [FAQ](../comm_res/faq.md) for common questions
-- Visit [Community & Resources](../comm_res/index.md) for support channels
-- [Contact](../comm_res/contact.md) the development team
+**Sunin Baek**  
+MINT Lab, School of Mechanical Engineering, Korea University  
+📧 suninbaek@korea.ac.kr
