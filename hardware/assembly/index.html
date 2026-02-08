@@ -1,0 +1,1934 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://printexo.github.io/hardware/assembly/">
+      
+      
+        <link rel="prev" href="../printing/">
+      
+      
+        <link rel="next" href="../shoelace/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/mintlab.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Assembly Guide - PrintExo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#assembly-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PrintExo" class="md-header__button md-logo" aria-label="PrintExo" data-md-component="logo">
+      <span style="font-weight: 700; font-size: 1.1rem;">
+  PrintExo
+</span>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PrintExo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Assembly Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Build the Robot
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../elec_control/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Electronics & Control
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../troubleshooting/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../updates/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Updates
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PrintExo" class="md-nav__button md-logo" aria-label="PrintExo" data-md-component="logo">
+      <span style="font-weight: 700; font-size: 1.1rem;">
+  PrintExo
+</span>
+    </a>
+    PrintExo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build the Robot
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Build the Robot
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bill of Materials (BOM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../printing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3D Printing Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assembly Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assembly Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Before You Begin
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Before You Begin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-required-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Required Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-assembly-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Assembly Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Assembly Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-sun-gear-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 — Sun Gear Assembly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-align-screw-holes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 — Align Screw Holes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-fasten-sun-gear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 — Fasten Sun Gear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-mount-sun-gear-to-actuation-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 — Mount Sun Gear to Actuation Module
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-planet-gear-bearing-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 — Planet Gear Bearing Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-ring-gear-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 — Ring Gear Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-secure-ring-gear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 — Secure Ring Gear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-carrier-bearing-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 — Carrier Bearing Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-medial-gearbox-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 — Medial Gearbox Bracket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-planet-gears-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 — Planet Gears Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-sun-gear-engagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 — Sun Gear Engagement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-12-carrier-fastening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 — Carrier Fastening
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-13-medial-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 — Medial Cover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-14-lower-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 — Lower Bracket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-15-check-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 15 — Check Assembly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-16-passive-hinge-bearings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 16 — Passive Hinge Bearings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-17-shank-structure-hinge-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 17 — Shank Structure &amp; Hinge Pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-18-upper-bracket-to-hinge-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 18 — Upper Bracket to Hinge Pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-19-upper-bracket-to-ring-gear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 19 — Upper Bracket to Ring Gear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-20-calf-compression-sleeve-strap-anchor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 20 — Calf Compression Sleeve &amp; Strap Anchor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-21-wire-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 21 — Wire Guide
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-22-dorsal-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 22 — Dorsal Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-23-auxiliary-lace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 23 — Auxiliary Lace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-24-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 24 — Complete 🎉
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-alignment-fit-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Alignment &amp; Fit Verification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Alignment &amp; Fit Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mechanical-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanical Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fit-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fit Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-safety-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Safety Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shoelace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shoelace Fixation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elec_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics & Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../updates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Before You Begin
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Before You Begin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-required-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Required Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-assembly-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Assembly Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Assembly Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-sun-gear-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 — Sun Gear Assembly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-align-screw-holes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 — Align Screw Holes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-fasten-sun-gear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 — Fasten Sun Gear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-mount-sun-gear-to-actuation-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 — Mount Sun Gear to Actuation Module
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-planet-gear-bearing-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 — Planet Gear Bearing Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-ring-gear-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 — Ring Gear Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-secure-ring-gear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 — Secure Ring Gear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-carrier-bearing-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 — Carrier Bearing Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-medial-gearbox-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 — Medial Gearbox Bracket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-planet-gears-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 — Planet Gears Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-sun-gear-engagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 — Sun Gear Engagement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-12-carrier-fastening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 — Carrier Fastening
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-13-medial-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 — Medial Cover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-14-lower-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 — Lower Bracket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-15-check-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 15 — Check Assembly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-16-passive-hinge-bearings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 16 — Passive Hinge Bearings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-17-shank-structure-hinge-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 17 — Shank Structure &amp; Hinge Pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-18-upper-bracket-to-hinge-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 18 — Upper Bracket to Hinge Pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-19-upper-bracket-to-ring-gear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 19 — Upper Bracket to Ring Gear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-20-calf-compression-sleeve-strap-anchor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 20 — Calf Compression Sleeve &amp; Strap Anchor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-21-wire-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 21 — Wire Guide
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-22-dorsal-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 22 — Dorsal Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-23-auxiliary-lace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 23 — Auxiliary Lace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-24-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 24 — Complete 🎉
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-alignment-fit-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Alignment &amp; Fit Verification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Alignment &amp; Fit Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mechanical-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanical Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fit-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fit Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-safety-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Safety Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Build the Robot
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="assembly-guide">Assembly Guide</h1>
+<p>This guide describes how to assemble <strong>PrintExo</strong> from 3D-printed components, off-the-shelf mechanical parts, and electronics.</p>
+<hr />
+<h2 id="1-overview">1. Overview</h2>
+<p>PrintExo uses a modular architecture organized into three main subsystems:</p>
+<table>
+<thead>
+<tr>
+<th>Subsystem</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actuation module</td>
+<td>Motor, planetary gear stage, protective casing</td>
+</tr>
+<tr>
+<td>Shank structure</td>
+<td>Vertical frame, passive hinge, calf attachment</td>
+</tr>
+<tr>
+<td>Shoe interface</td>
+<td>Dorsal component, plantar guides, lace integration</td>
+</tr>
+</tbody>
+</table>
+<p>Assembly follows a bottom-up approach: gearbox → actuation module → shank → shoe interface.</p>
+<hr />
+<h2 id="2-before-you-begin">2. Before You Begin</h2>
+<h3 id="checklist">Checklist</h3>
+<ul>
+<li>[ ] All 3D-printed parts completed and post-processed</li>
+<li>[ ] All BOM components available (bearings, fasteners, motor)</li>
+<li>[ ] Required tools prepared</li>
+<li>[ ] Clean, well-lit workspace</li>
+</ul>
+<h3 id="recommended-preparation">Recommended Preparation</h3>
+<ol>
+<li><strong>Verify printed parts</strong> — check for warping, incomplete features, or layer defects</li>
+<li><strong>Ream all holes</strong> — use appropriate drill bits to clean up M3 holes</li>
+<li><strong>Tap threads</strong> — tap M3 holes where bolts will be inserted</li>
+<li><strong>Dry-fit bearings</strong> — ensure press-fit is snug but not cracked</li>
+</ol>
+<hr />
+<h2 id="3-required-tools">3. Required Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Size/Spec</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hex key set</td>
+<td>2.5 mm (for M3)</td>
+<td>Tightening bolts</td>
+</tr>
+<tr>
+<td>Screwdriver</td>
+<td>Phillips / Flat</td>
+<td>General fastening</td>
+</tr>
+<tr>
+<td>Drill bits</td>
+<td>2.5 mm, 3.0 mm</td>
+<td>Hole reaming</td>
+</tr>
+<tr>
+<td>Hand tap</td>
+<td>M3 × 0.5</td>
+<td>Threading holes</td>
+</tr>
+<tr>
+<td>Needle-nose pliers</td>
+<td>—</td>
+<td>Support removal, small parts</td>
+</tr>
+<tr>
+<td>Calipers</td>
+<td>—</td>
+<td>Dimensional verification</td>
+</tr>
+<tr>
+<td>Power drill (optional)</td>
+<td>—</td>
+<td>Speeds up drilling/tapping</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-assembly-steps">4. Assembly Steps</h2>
+<hr />
+<h3 id="step-1-sun-gear-assembly">Step 1 — Sun Gear Assembly</h3>
+<p>Fit the <strong>Sun Gear</strong> to the <strong>Sun Gear Holder</strong>.</p>
+<p><img alt="Step 1" src="../../images/assembly/1.jpg" /></p>
+<hr />
+<h3 id="step-2-align-screw-holes">Step 2 — Align Screw Holes</h3>
+<p>Align the screw holes.</p>
+<p><img alt="Step 2" src="../../images/assembly/2.jpg" /></p>
+<hr />
+<h3 id="step-3-fasten-sun-gear">Step 3 — Fasten Sun Gear</h3>
+<p>Fasten using <strong>six (6) M3 × 22 mm screws</strong> until each screw contacts the bottom surface.</p>
+<p><img alt="Step 3" src="../../images/assembly/3.jpg" /></p>
+<hr />
+<h3 id="step-4-mount-sun-gear-to-actuation-module">Step 4 — Mount Sun Gear to Actuation Module</h3>
+<p>Align the <strong>Sun Gear</strong> with the <strong>six (6) screw holes</strong> on the <strong>Actuation Module (CubeMars AK60-6 V1.1 KV140)</strong>. Fasten in the specified order, then tighten fully.</p>
+<blockquote>
+<p>⚠️ <strong>Caution:</strong> Do not let any screw tilt the Sun Gear contact surface.</p>
+</blockquote>
+<p><img alt="Step 4-1" src="../../images/assembly/4.jpg" />
+<img alt="Step 4-2" src="../../images/assembly/5.jpg" />
+<img alt="Step 4-3" src="../../images/assembly/6.jpg" /></p>
+<hr />
+<h3 id="step-5-planet-gear-bearing-installation">Step 5 — Planet Gear Bearing Installation</h3>
+<p>Insert <strong>one (1) HK0810 (8×12×10)</strong> into each of the <strong>four (4) Planet Gears</strong>.</p>
+<p><img alt="Step 5-1" src="../../images/assembly/7.jpg" />
+<img alt="Step 5-2" src="../../images/assembly/8.jpg" /></p>
+<hr />
+<h3 id="step-6-ring-gear-installation">Step 6 — Ring Gear Installation</h3>
+<p>Align the <strong>Ring Gear</strong> with the <strong>Actuation Module</strong>, then insert it fully.</p>
+<p><img alt="Step 6-1" src="../../images/assembly/9.jpg" />
+<img alt="Step 6-2" src="../../images/assembly/10.jpg" />
+<img alt="Step 6-3" src="../../images/assembly/11.jpg" /></p>
+<hr />
+<h3 id="step-7-secure-ring-gear">Step 7 — Secure Ring Gear</h3>
+<p>Fasten using <strong>six (6) M3 × 5 mm screws</strong> in the specified order, then tighten fully.</p>
+<p><img alt="Step 7-1" src="../../images/assembly/12.jpg" />
+<img alt="Step 7-2" src="../../images/assembly/13.jpg" /></p>
+<hr />
+<h3 id="step-8-carrier-bearing-installation">Step 8 — Carrier Bearing Installation</h3>
+<p>Insert <strong>one (1) HK0810 (8×12×10)</strong> into the <strong>Carrier</strong>.</p>
+<p><img alt="Step 8-1" src="../../images/assembly/14.jpg" />
+<img alt="Step 8-2" src="../../images/assembly/15.jpg" /></p>
+<hr />
+<h3 id="step-9-medial-gearbox-bracket">Step 9 — Medial Gearbox Bracket</h3>
+<p>Align the <strong>Medial Gearbox Bracket</strong> with the bearing, then insert it fully.</p>
+<p><img alt="Step 9-1" src="../../images/assembly/16.jpg" />
+<img alt="Step 9-2" src="../../images/assembly/17.jpg" /></p>
+<hr />
+<h3 id="step-10-planet-gears-installation">Step 10 — Planet Gears Installation</h3>
+<p>Align the <strong>four (4) Planet Gears</strong> with the bearings, then insert them fully.</p>
+<p><img alt="Step 10" src="../../images/assembly/18.jpg" /></p>
+<hr />
+<h3 id="step-11-sun-gear-engagement">Step 11 — Sun Gear Engagement</h3>
+<p>Align the <strong>Actuation Module Sun Gear</strong> with the bearing, then insert it fully.</p>
+<blockquote>
+<p>⚠️ <strong>Caution:</strong> Align the teeth of the four (4) Planet Gears with the teeth of the Sun Gear.</p>
+</blockquote>
+<p><img alt="Step 11-1" src="../../images/assembly/19.jpg" />
+<img alt="Step 11-2" src="../../images/assembly/20.jpg" /></p>
+<hr />
+<h3 id="step-12-carrier-fastening">Step 12 — Carrier Fastening</h3>
+<p>Insert <strong>M3 flat washers</strong>, then fasten the <strong>Carrier</strong> to the <strong>Actuation Module</strong> using <strong>two (2) M3 × 22 mm screws</strong>. Tighten fully.</p>
+<p><img alt="Step 12-1" src="../../images/assembly/21.jpg" />
+<img alt="Step 12-2" src="../../images/assembly/22.jpg" />
+<img alt="Step 12-3" src="../../images/assembly/23.jpg" /></p>
+<hr />
+<h3 id="step-13-medial-cover">Step 13 — Medial Cover</h3>
+<p>Fasten the <strong>Medial Cover</strong> using <strong>three (3) M3 × 22 mm screws</strong>. Tighten fully.</p>
+<p><img alt="Step 13-1" src="../../images/assembly/24.jpg" />
+<img alt="Step 13-2" src="../../images/assembly/25.jpg" />
+<img alt="Step 13-3" src="../../images/assembly/26.jpg" /></p>
+<hr />
+<h3 id="step-14-lower-bracket">Step 14 — Lower Bracket</h3>
+<p>Fasten the <strong>Lower Bracket</strong> using <strong>three (3) M3 × 22 mm screws</strong>. Tighten fully.</p>
+<p><img alt="Step 14-1" src="../../images/assembly/27.jpg" />
+<img alt="Step 14-2" src="../../images/assembly/28.jpg" />
+<img alt="Step 14-3" src="../../images/assembly/29.jpg" /></p>
+<hr />
+<h3 id="step-15-check-assembly">Step 15 — Check Assembly</h3>
+<p>Check that there are no gaps between modules.</p>
+<p><img alt="Step 15" src="../../images/assembly/30.jpg" /></p>
+<hr />
+<h3 id="step-16-passive-hinge-bearings">Step 16 — Passive Hinge Bearings</h3>
+<p>Insert <strong>two (2) HK0810 (8×12×10)</strong> into the holes in the <strong>Passive Hinge</strong> section of the <strong>Shank Structure</strong>.</p>
+<p><img alt="Step 16-1" src="../../images/assembly/31.jpg" />
+<img alt="Step 16-2" src="../../images/assembly/32.jpg" />
+<img alt="Step 16-3" src="../../images/assembly/33.jpg" /></p>
+<hr />
+<h3 id="step-17-shank-structure-hinge-pin">Step 17 — Shank Structure &amp; Hinge Pin</h3>
+<p>Fit the <strong>Shank Structure</strong> to the <strong>Ring Gear</strong>. Insert the <strong>Hinge Pin</strong>, then fasten using <strong>one (1) M3 × 40 mm screw</strong>. Tighten fully.</p>
+<p><img alt="Step 17-1" src="../../images/assembly/34.jpg" />
+<img alt="Step 17-2" src="../../images/assembly/35.jpg" /></p>
+<hr />
+<h3 id="step-18-upper-bracket-to-hinge-pin">Step 18 — Upper Bracket to Hinge Pin</h3>
+<p>Fasten the <strong>Upper Bracket</strong> to the <strong>Hinge Pin</strong> using <strong>one (1) M3 × 40 mm screw</strong>. Tighten fully.</p>
+<p><img alt="Step 18-1" src="../../images/assembly/36.jpg" />
+<img alt="Step 18-2" src="../../images/assembly/37.jpg" />
+<img alt="Step 18-3" src="../../images/assembly/38.jpg" /></p>
+<hr />
+<h3 id="step-19-upper-bracket-to-ring-gear">Step 19 — Upper Bracket to Ring Gear</h3>
+<p>Fasten the <strong>Upper Bracket</strong> to the <strong>Ring Gear</strong> using <strong>three (3) M3 × 22 mm screws</strong>. Tighten fully.</p>
+<p><img alt="Step 19" src="../../images/assembly/39.jpg" /></p>
+<hr />
+<h3 id="step-20-calf-compression-sleeve-strap-anchor">Step 20 — Calf Compression Sleeve &amp; Strap Anchor</h3>
+<p>Fasten the <strong>Calf Compression Sleeve</strong> and <strong>Strap Anchor</strong> to the <strong>Shank Structure</strong> using <strong>four (4) M3 × 22 mm screws</strong>. Tighten fully.</p>
+<blockquote>
+<p>⚠️ <strong>Caution:</strong> Select the size option based on the user's shank length, then fasten through the corresponding holes.</p>
+</blockquote>
+<p><img alt="Step 20-1" src="../../images/assembly/40.jpg" />
+<img alt="Step 20-2" src="../../images/assembly/41.jpg" />
+<img alt="Step 20-3" src="../../images/assembly/42.jpg" />
+<img alt="Step 20-4" src="../../images/assembly/43.jpg" /></p>
+<hr />
+<h3 id="step-21-wire-guide">Step 21 — Wire Guide</h3>
+<p>Fasten the <strong>Wire Guide</strong> using <strong>four (4) M3 × 22 mm screws</strong>. Tighten fully.</p>
+<p><img alt="Step 21-1" src="../../images/assembly/44.jpg" />
+<img alt="Step 21-2" src="../../images/assembly/45.jpg" /></p>
+<hr />
+<h3 id="step-22-dorsal-interface">Step 22 — Dorsal Interface</h3>
+<p>Fasten the shoe-mounted <strong>Dorsal Interface</strong> to the <strong>Carrier</strong> using <strong>four (4) M3 × 20 mm screws</strong>. Tighten fully.</p>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong><br />
+This step attaches the dorsal interface to the device.<br />
+Instructions for mounting the dorsal interface onto the shoe are provided in the<br />
+<strong><a href="../shoelace/">Shoelace Fixation Guide</a></strong>.</p>
+</blockquote>
+<p><img alt="Step 22-1" src="../../images/assembly/46.jpg" />
+<img alt="Step 22-2" src="../../images/assembly/47.jpg" />
+<img alt="Step 22-3" src="../../images/assembly/48.jpg" />
+<img alt="Step 22-4" src="../../images/assembly/49.jpg" /></p>
+<hr />
+<h3 id="step-23-auxiliary-lace">Step 23 — Auxiliary Lace</h3>
+<p>Use the <strong>Auxiliary Lace</strong> to secure the <strong>Dorsal Interface</strong> and <strong>Carrier</strong> assembly to the shoe.</p>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong><br />
+Detailed lace routing and tying instructions are provided in the<br />
+<strong><a href="../shoelace/">Shoelace Fixation Guide</a></strong>.</p>
+</blockquote>
+<p><img alt="Step 23-1" src="../../images/assembly/50.jpg" />
+<img alt="Step 23-2" src="../../images/assembly/51.jpg" /></p>
+<hr />
+<h3 id="step-24-complete">Step 24 — Complete 🎉</h3>
+<p>Assembly complete.</p>
+<p><img alt="Complete" src="../../images/assembly/52.jpg" /></p>
+<hr />
+<h2 id="5-alignment-fit-verification">5. Alignment &amp; Fit Verification</h2>
+<p>After assembly, perform the following checks:</p>
+<h3 id="mechanical-checks">Mechanical Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gearbox rotation</td>
+<td>Smooth, no grinding or binding</td>
+</tr>
+<tr>
+<td>Hinge movement</td>
+<td>Free inversion/eversion motion</td>
+</tr>
+<tr>
+<td>Motor operation</td>
+<td>Spins without obstruction</td>
+</tr>
+<tr>
+<td>Shoe interface rigidity</td>
+<td>No wobble at mounting point</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fit-checks">Fit Checks</h3>
+<ul>
+<li>[ ] Shank aligned with lateral side of lower leg</li>
+<li>[ ] Ankle joint axis approximately aligned with device axis</li>
+<li>[ ] Calf sleeve secure while comfortable</li>
+<li>[ ] Laces tensioned evenly across dorsal interface</li>
+<li>[ ] No pinch points during range of motion test</li>
+</ul>
+<hr />
+<h2 id="6-safety-notes">6. Safety Notes</h2>
+<ul>
+<li><strong>Do not over-tighten</strong> M3 bolts — PLA can crack under excessive torque</li>
+<li><strong>Inspect all structural joints</strong> before human testing</li>
+<li><strong>Check for pinch points</strong> around hinge and gearbox</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <div class="md-footer-meta__item">
+
+        
+          <div>
+            Copyright &copy; Korea University Movement Intelligence Laboratory(MINT Lab), All Rights Reserved.
+          </div>
+        
+
+        
+          <div>
+            Made with <a href="https://squidfunk.github.io/mkdocs-material/">
+              Material for MkDocs
+            </a>
+          </div>
+        
+
+        <div>
+          Contributed by Sunin Baek, Yuhyun Lee
+        </div>
+      </div>
+
+      <div class="md-footer-meta__item md-footer-meta__item--right" 
+        style="display: flex; align-items: center;">
+
+        <a href="https://www.korea.ac.kr/sites/en/index.do" target="_blank" rel="noopener">
+          <img
+            src="../../images/ku_logo.png"
+            alt="Korea University"
+            style="height: 30px;"
+          />
+        </a>
+
+        <a href="https://mintlab.korea.ac.kr/" target="_blank" rel="noopener">
+          <img
+            src="../../images/mintlab_logo.png"
+            alt="MINT Lab"
+            style="height: 30px; margin-left: 12px;"
+          />
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.prune", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

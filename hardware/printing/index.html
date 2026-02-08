@@ -1,0 +1,1766 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://printexo.github.io/hardware/printing/">
+      
+      
+        <link rel="prev" href="../bom/">
+      
+      
+        <link rel="next" href="../assembly/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/mintlab.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>3D Printing Guide - PrintExo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3d-printing-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PrintExo" class="md-header__button md-logo" aria-label="PrintExo" data-md-component="logo">
+      <span style="font-weight: 700; font-size: 1.1rem;">
+  PrintExo
+</span>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PrintExo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3D Printing Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Build the Robot
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../elec_control/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Electronics & Control
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../troubleshooting/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../updates/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Updates
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PrintExo" class="md-nav__button md-logo" aria-label="PrintExo" data-md-component="logo">
+      <span style="font-weight: 700; font-size: 1.1rem;">
+  PrintExo
+</span>
+    </a>
+    PrintExo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build the Robot
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Build the Robot
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bill of Materials (BOM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3D Printing Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3D Printing Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cad-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAD Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printing-estimates-per-leg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printing Estimates (per leg)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-required-printing-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Required Printing Equipment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Required Printing Equipment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicer-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicer Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-general-print-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. General Print Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-print-orientation-strength-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Print Orientation &amp; Strength Considerations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Print Orientation &amp; Strength Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-orientations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical Orientations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-part-by-part-printing-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Part-by-Part Printing Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Post-processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Post-processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-support-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Support Removal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-surface-finishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Surface Finishing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-hole-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Hole Preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-dimensional-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Dimensional Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-common-printing-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Common Printing Issues
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Next Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#having-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Having Issues?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assembly Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shoelace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shoelace Fixation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elec_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics & Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../updates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cad-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAD Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printing-estimates-per-leg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printing Estimates (per leg)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-required-printing-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Required Printing Equipment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Required Printing Equipment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nozzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nozzle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicer-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slicer Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-general-print-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. General Print Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-print-orientation-strength-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Print Orientation &amp; Strength Considerations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Print Orientation &amp; Strength Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-orientations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical Orientations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-part-by-part-printing-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Part-by-Part Printing Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Post-processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Post-processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-support-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Support Removal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-surface-finishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Surface Finishing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-hole-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Hole Preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-dimensional-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Dimensional Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-common-printing-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Common Printing Issues
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Next Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#having-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Having Issues?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Build the Robot
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="3d-printing-guide">3D Printing Guide</h1>
+<p>This page provides detailed instructions for 3D printing all custom structural components of PrintExo.</p>
+<h2 id="cad-files">CAD Files</h2>
+<p>All CAD files required for 3D printing PrintExo are provided as open-source resources.</p>
+<ul>
+<li>Printable STL files for all structural components  </li>
+<li>Editable Fusion 360 parametric models (.f3d)  </li>
+<li>Optional parametric export script for shoe-width customization</li>
+</ul>
+<p>👉 <strong>Download CAD files:</strong><br />
+<a href="https://drive.google.com/drive/folders/1tcYwJKkRYvDyukaBFUs_2lasKkoU8P6Q?usp=drive_link">Google Drive – PrintExo CAD Release</a></p>
+<hr />
+<h2 id="1-overview">1. Overview</h2>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>All custom parts are designed for <strong>consumer-grade FDM printers</strong></li>
+<li>Primary material: <strong>PLA</strong> (PETG or carbon-fiber–reinforced filaments also compatible)</li>
+</ul>
+<p>The following subsystems require 3D-printed components:</p>
+<table>
+<thead>
+<tr>
+<th>Subsystem</th>
+<th>Components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actuation module</td>
+<td>Planetary gear stage, protective casing</td>
+</tr>
+<tr>
+<td>Shank structure</td>
+<td>Shank body, passive hinge</td>
+</tr>
+<tr>
+<td>Shoe interface</td>
+<td>Dorsal component, plantar guides</td>
+</tr>
+</tbody>
+</table>
+<h3 id="printing-estimates-per-leg">Printing Estimates (per leg)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total print time</td>
+<td>1 day 23 hours 51 minutes</td>
+</tr>
+<tr>
+<td>Model filament</td>
+<td>928.70 g</td>
+</tr>
+<tr>
+<td>Support filament</td>
+<td>21.22 g</td>
+</tr>
+<tr>
+<td><strong>Total filament</strong></td>
+<td><strong>949.92 g</strong></td>
+</tr>
+<tr>
+<td>Estimated cost</td>
+<td>$23.74</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Estimates based on 70% gyroid infill with supports. Actual values may vary depending on printer, slicer settings, and filament brand.</p>
+</blockquote>
+<hr />
+<h2 id="2-required-printing-equipment">2. Required Printing Equipment</h2>
+<h3 id="printer">Printer</h3>
+<ul>
+<li><strong>Recommended:</strong> Bambu Lab X1C (or equivalent enclosed FDM printer)</li>
+<li>Any consumer-grade FDM 3D printer is compatible</li>
+</ul>
+<h3 id="nozzle">Nozzle</h3>
+<ul>
+<li><strong>Diameter:</strong> 0.4 mm (standard)</li>
+<li>Hardened steel nozzle recommended for abrasive filaments</li>
+</ul>
+<h3 id="slicer-software">Slicer Software</h3>
+<ul>
+<li>Bambu Studio (for Bambu Lab printers)</li>
+<li>PrusaSlicer, Cura, or equivalent</li>
+</ul>
+<h3 id="optional">Optional</h3>
+<ul>
+<li>Filament dryer (recommended for hygroscopic materials like PETG)</li>
+<li>Enclosed chamber (improves print consistency)</li>
+</ul>
+<hr />
+<h2 id="3-general-print-settings">3. General Print Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Recommended Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Layer height</td>
+<td>0.20 mm</td>
+<td>Balance between speed and strength</td>
+</tr>
+<tr>
+<td>Nozzle diameter</td>
+<td>0.4 mm</td>
+<td>Standard</td>
+</tr>
+<tr>
+<td>Infill pattern</td>
+<td>Gyroid</td>
+<td>Good omnidirectional strength</td>
+</tr>
+<tr>
+<td>Infill ratio</td>
+<td>70%</td>
+<td>For structural rigidity</td>
+</tr>
+<tr>
+<td>Perimeters (walls)</td>
+<td>4</td>
+<td>Increases shell strength</td>
+</tr>
+<tr>
+<td>Top/Bottom layers</td>
+<td>5</td>
+<td>Ensures solid surfaces</td>
+</tr>
+<tr>
+<td>Support</td>
+<td>Part-dependent</td>
+<td>See Part-by-Part notes</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>PLA</td>
+<td>PETG or CF-PLA also compatible</td>
+</tr>
+<tr>
+<td>Bed temperature</td>
+<td>60°C</td>
+<td>For PLA</td>
+</tr>
+<tr>
+<td>Nozzle temperature</td>
+<td>210°C</td>
+<td>Adjust per filament brand</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-print-orientation-strength-considerations">4. Print Orientation &amp; Strength Considerations</h2>
+<p>FDM prints exhibit <strong>anisotropic strength</strong> — they are weakest along the layer lines (Z-axis).</p>
+<h3 id="guidelines">Guidelines</h3>
+<ol>
+<li>
+<p><strong>Load-bearing parts</strong> should be oriented so that primary stresses act <strong>parallel to the print bed</strong> (X-Y plane), not perpendicular (Z-axis).</p>
+</li>
+<li>
+<p><strong>Planetary gears</strong> require careful orientation to ensure tooth strength and smooth meshing.</p>
+</li>
+<li>
+<p><strong>Use brims</strong> (5–10 mm) for parts with small footprints to prevent warping and improve bed adhesion.</p>
+</li>
+<li>
+<p><strong>Avoid rafts</strong> unless absolutely necessary — they can affect dimensional accuracy on mating surfaces.</p>
+</li>
+</ol>
+<h3 id="critical-orientations">Critical Orientations</h3>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Recommended Orientation</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shank body</td>
+<td>Vertical (standing)</td>
+<td>Maximizes bending strength</td>
+</tr>
+<tr>
+<td>Gear components</td>
+<td>Flat (teeth facing up)</td>
+<td>Preserves tooth geometry</td>
+</tr>
+<tr>
+<td>Shoe interface</td>
+<td>Flat</td>
+<td>Ensures accurate mounting surfaces</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-part-by-part-printing-notes">5. Part-by-Part Printing Notes</h2>
+<table>
+<thead>
+<tr>
+<th>Part Name</th>
+<th>Quantity</th>
+<th>Orientation</th>
+<th>Support</th>
+<th>Infill</th>
+<th>Special Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sun gear</td>
+<td>1</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Planet gear</td>
+<td>3</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>Print bearings separately</td>
+</tr>
+<tr>
+<td>Ring gear</td>
+<td>1</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>Check inner teeth quality</td>
+</tr>
+<tr>
+<td>Carrier</td>
+<td>1</td>
+<td>Flat</td>
+<td>Yes</td>
+<td>70%</td>
+<td>Remove supports carefully</td>
+</tr>
+<tr>
+<td>Motor casing</td>
+<td>1</td>
+<td>Upright</td>
+<td>Yes</td>
+<td>50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Shank body</td>
+<td>1</td>
+<td>Vertical</td>
+<td>Yes</td>
+<td>70%</td>
+<td>Orient for bending load</td>
+</tr>
+<tr>
+<td>Hinge component</td>
+<td>2</td>
+<td>Flat</td>
+<td>No</td>
+<td>70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Dorsal interface</td>
+<td>1</td>
+<td>Flat</td>
+<td>Yes</td>
+<td>70%</td>
+<td>Size-specific</td>
+</tr>
+<tr>
+<td>Plantar guide</td>
+<td>2</td>
+<td>Flat</td>
+<td>No</td>
+<td>50%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> This table is an example. Refer to the CAD files for the complete part list.</p>
+</blockquote>
+<hr />
+<h2 id="6-post-processing">6. Post-processing</h2>
+<p>After printing, perform the following steps:</p>
+<h3 id="61-support-removal">6.1 Support Removal</h3>
+<ul>
+<li>Use flush cutters or needle-nose pliers</li>
+<li>Be careful around gear teeth and mounting holes</li>
+</ul>
+<h3 id="62-surface-finishing">6.2 Surface Finishing</h3>
+<ul>
+<li>Light sanding (220–400 grit) on mating surfaces</li>
+<li>Focus on surfaces that interface with bearings or fasteners</li>
+</ul>
+<h3 id="63-hole-preparation">6.3 Hole Preparation</h3>
+<ul>
+<li><strong>Reaming:</strong> Use appropriately sized drill bits to clean up holes</li>
+<li><strong>Tapping:</strong> M3 holes may require tapping for secure bolt threads</li>
+</ul>
+<h3 id="64-dimensional-verification">6.4 Dimensional Verification</h3>
+<ul>
+<li>Check critical dimensions with calipers</li>
+<li>Gear mesh should be smooth without binding</li>
+<li>Bearing press-fit should be snug but not overly tight</li>
+</ul>
+<hr />
+<h2 id="7-common-printing-issues">7. Common Printing Issues</h2>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Possible Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Warping</td>
+<td>Poor bed adhesion, no enclosure</td>
+<td>Use brim, increase bed temp, use enclosure</td>
+</tr>
+<tr>
+<td>Layer delamination</td>
+<td>Under-extrusion, low temp</td>
+<td>Increase nozzle temp, check filament quality</td>
+</tr>
+<tr>
+<td>Poor gear tooth finish</td>
+<td>Too fast, insufficient cooling</td>
+<td>Reduce speed for outer walls, increase cooling</td>
+</tr>
+<tr>
+<td>Holes too tight</td>
+<td>Over-extrusion</td>
+<td>Calibrate flow rate, or ream holes after printing</td>
+</tr>
+<tr>
+<td>Holes too loose</td>
+<td>Under-extrusion</td>
+<td>Increase flow rate, or use smaller drill bit</td>
+</tr>
+<tr>
+<td>Stringing</td>
+<td>High temp, no retraction</td>
+<td>Lower temp, enable/increase retraction</td>
+</tr>
+<tr>
+<td>Z-seam visible</td>
+<td>Slicer settings</td>
+<td>Set seam position to "sharpest corner" or "rear"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<p>After completing all prints and post-processing:</p>
+<ul>
+<li><a href="../assembly/">Assembly Guide</a> — Step-by-step assembly instructions</li>
+</ul>
+<h3 id="having-issues">Having Issues?</h3>
+<ul>
+<li><a href="../../troubleshooting/hardware/">Troubleshooting — Hardware Issues</a> — Print quality and fit problems</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <div class="md-footer-meta__item">
+
+        
+          <div>
+            Copyright &copy; Korea University Movement Intelligence Laboratory(MINT Lab), All Rights Reserved.
+          </div>
+        
+
+        
+          <div>
+            Made with <a href="https://squidfunk.github.io/mkdocs-material/">
+              Material for MkDocs
+            </a>
+          </div>
+        
+
+        <div>
+          Contributed by Sunin Baek, Yuhyun Lee
+        </div>
+      </div>
+
+      <div class="md-footer-meta__item md-footer-meta__item--right" 
+        style="display: flex; align-items: center;">
+
+        <a href="https://www.korea.ac.kr/sites/en/index.do" target="_blank" rel="noopener">
+          <img
+            src="../../images/ku_logo.png"
+            alt="Korea University"
+            style="height: 30px;"
+          />
+        </a>
+
+        <a href="https://mintlab.korea.ac.kr/" target="_blank" rel="noopener">
+          <img
+            src="../../images/mintlab_logo.png"
+            alt="MINT Lab"
+            style="height: 30px; margin-left: 12px;"
+          />
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.prune", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
