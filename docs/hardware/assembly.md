@@ -256,6 +256,11 @@ Fasten the **Wire Guide** using **four (4) M3 × 22 mm screws**. Tighten fully.
 
 Fasten the shoe-mounted **Dorsal Interface** to the **Carrier** using **four (4) M3 × 20 mm screws**. Tighten fully.
 
+> ℹ️ **Note:**  
+> This step attaches the dorsal interface to the device.  
+> Instructions for mounting the dorsal interface onto the shoe are provided in the  
+> **[Shoelace Fixation Guide](shoelace.md)**.
+
 ![Step 22-1](../images/assembly/46.jpg)
 ![Step 22-2](../images/assembly/47.jpg)
 ![Step 22-3](../images/assembly/48.jpg)
@@ -265,7 +270,11 @@ Fasten the shoe-mounted **Dorsal Interface** to the **Carrier** using **four (4)
 
 ### Step 23 — Auxiliary Lace
 
-Use the **Auxiliary Lace** to fasten the **Carrier** to the shoe.
+Use the **Auxiliary Lace** to secure the **Dorsal Interface** and **Carrier** assembly to the shoe.
+
+> ℹ️ **Note:**  
+> Detailed lace routing and tying instructions are provided in the  
+> **[Shoelace Fixation Guide](shoelace.md)**.
 
 ![Step 23-1](../images/assembly/50.jpg)
 ![Step 23-2](../images/assembly/51.jpg)
