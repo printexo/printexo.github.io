@@ -306,7 +306,7 @@ After assembly, perform the following checks:
 
 - [ ] Shank aligned with lateral side of lower leg
 - [ ] Ankle joint axis approximately aligned with device axis
-- [ ] Calf sleeve secure but comfortable
+- [ ] Calf sleeve secure while comfortable
 - [ ] Laces tensioned evenly across dorsal interface
 - [ ] No pinch points during range of motion test
 
@@ -317,17 +317,7 @@ After assembly, perform the following checks:
 - **Do not over-tighten** M3 bolts — PLA can crack under excessive torque
 - **Inspect all structural joints** before human testing
 - **Check for pinch points** around hinge and gearbox
-- **Verify motor is unpowered** during mechanical assembly
-- **Perform bench test** before wearing the device
-- **Start with zero-torque mode** for initial human trials
 
 ---
 
-## 7. Next Steps
 
-After completing mechanical assembly, proceed to:
-
-- [Electronics & Control Overview](../elec_control/index.md)
-- [Motor Driver & Configuration](../elec_control/motor.md)
-- [Wiring](../elec_control/wiring.md)
-- [Running Demo](../elec_control/demo.md)
