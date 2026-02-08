@@ -68,10 +68,10 @@ nav:
 
   - Electronics & Control:
       - Overview: elec_control/index.md
-      - Motor driver & configuration: elec_control/motor.md
-      - Wiring: elec_control/wiring.md
-      - Control software overview: elec_control/control.md
-      - Running demo: elec_control/demo.md
+      #- Motor driver & configuration: elec_control/motor.md
+      #- Wiring: elec_control/wiring.md
+      #- Control software overview: elec_control/control.md
+      #- Running demo: elec_control/demo.md
 
   - Troubleshooting:
       - Overview: troubleshooting/index.md
