@@ -9,7 +9,7 @@ This page provides citation information for **PrintExo**.
 > ✏️ Placeholder — replace with final citation text once published.
 ```
 @article{baek2026printexo,
-author = {Baek, Sunin and Lee, Yuhyun and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
+author = {Baek, Sunin and Lee, Yuhyeon and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
 title = {PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research},
 journal = {arXiv preprint},
 year = {2026}

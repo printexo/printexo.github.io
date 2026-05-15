@@ -73,7 +73,7 @@ If you use PrintExo in your work, please cite:
 
 ```
 @unpublished{baek2026printexo,
-  author = {Baek, Sunin and Lee, Yuhyun and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
+  author = {Baek, Sunin and Lee, Yuhyeon and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
   title  = {PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research},
   note   = {Manuscript submitted to IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)},
   year   = {2026}
@@ -83,7 +83,7 @@ If you use PrintExo in your work, please cite:
 
 <!--
 @inproceedings{baek2026printexo,
-  author    = {Baek, Sunin and Lee, Yuhyun and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
+  author    = {Baek, Sunin and Lee, Yuhyeon and Hur, Benjamin and Cha, Eun Sang and Kim, Daekyum},
   title     = {PrintExo: An Open-Source, Shoe-Agnostic, 3D-Printable Ankle Exoskeleton for Accessible Locomotion Research},
   booktitle = {IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics (BioRob)},
   year      = {2026}
