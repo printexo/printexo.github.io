@@ -19,6 +19,8 @@ The device was evaluated in a pilot treadmill study with five able-bodied partic
 
 Overall, PrintExo provides a practical, low-overhead, open-source platform for accessible ankle-exoskeleton prototyping and pilot locomotion experiments.
 
+**[📄 Read the full paper (PDF)](docs/manuscript.pdf)**
+
 
 </details>
 
@@ -41,7 +43,7 @@ Overall, PrintExo provides a practical, low-overhead, open-source platform for a
 - 🔗 CAD, STL, and G-code 
 - 🔗 Assembly manual
 - 🔗 Example Control demo scripts — *coming soon*  
-- 🔗 Research paper — *coming soon*
+- 📄 [Research paper (PDF)](docs/manuscript.pdf)
 
 > All resources will be released in a public repository.
 
