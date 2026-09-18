@@ -19,11 +19,13 @@ The device was evaluated in a pilot treadmill study with five able-bodied partic
 
 Overall, PrintExo provides a practical, low-overhead, open-source platform for accessible ankle-exoskeleton prototyping and pilot locomotion experiments.
 
-**[📄 Read the full paper (PDF)](manuscript.pdf)**
-
-
 </details>
 
+---
+
+## 📄 Research Paper
+
+[**Read the full paper (PDF)**](manuscript.pdf)
 
 ---
 
@@ -37,13 +39,11 @@ Overall, PrintExo provides a practical, low-overhead, open-source platform for a
 
 ---
 
-
 ## 📦 Open Resources
 
 - 🔗 CAD, STL, and G-code 
 - 🔗 Assembly manual
 - 🔗 Example Control demo scripts — *coming soon*  
-- 📄 [Research paper (PDF)](docs/manuscript.pdf)
 
 > All resources will be released in a public repository.
 
@@ -55,7 +55,6 @@ PrintExo is a **prototype research platform** intended for **pilot studies and e
 It is **not a certified medical device**, and its safety or clinical effectiveness has **not been established**.  
 PrintExo should **not** be used for diagnosis, treatment, rehabilitation, or unsupervised human assistance.
 All experiments involving human subjects should follow your local Institutional Review Board (IRB) or equivalent ethics approval process.
-
 
 ---
 
@@ -91,6 +90,5 @@ If you use PrintExo in your work, please cite:
   year      = {2026}
 }
 -->
-
 
 ---
