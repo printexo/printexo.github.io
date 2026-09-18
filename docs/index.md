@@ -1,6 +1,6 @@
 # PrintExo
 
-### An open-source, shoe-agnostic, 3D-printable ankle exoskeleton for accessible locomotion research
+### An open-source, shoe-agnostic, 3D-printable ankle exoskeleton platform for accessible locomotion research
 
 ---
 
