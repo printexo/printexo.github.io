@@ -1,0 +1,9 @@
+.md-footer,
+.md-footer .md-footer-meta,
+.md-footer .md-footer-meta__item {
+  font-size: 0.5rem !important;
+}
+
+.md-header__title .md-header__ellipsis .md-header__topic:first-of-type {
+  display: none !important;
+}
