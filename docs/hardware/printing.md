@@ -114,7 +114,7 @@ FDM prints exhibit **anisotropic strength** — they are weakest along the layer
 | Part Name | Quantity | Orientation | Support | Infill | Special Notes |
 |-----------|----------|-------------|---------|--------|---------------|
 | Sun gear | 1 | Flat | No | 70% | — |
-| Planet gear | 3 | Flat | No | 70% | Print bearings separately |
+| Planet gear | 4 | Flat | No | 70% | Print bearings separately |
 | Ring gear | 1 | Flat | No | 70% | Check inner teeth quality |
 | Carrier | 1 | Flat | Yes | 70% | Remove supports carefully |
 | Motor casing | 1 | Upright | Yes | 50% | — |
